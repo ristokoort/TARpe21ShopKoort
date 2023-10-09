@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TARpe21ShopKoort", "TARpe21ShopKoort\TARpe21ShopKoort.csproj", "{B502290C-EB16-4224-AE43-BE874C0FE790}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B502290C-EB16-4224-AE43-BE874C0FE790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B502290C-EB16-4224-AE43-BE874C0FE790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B502290C-EB16-4224-AE43-BE874C0FE790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B502290C-EB16-4224-AE43-BE874C0FE790}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1192E7E0-7904-434A-8913-FDC5A283D9A3}
+	EndGlobalSection
+EndGlobal
