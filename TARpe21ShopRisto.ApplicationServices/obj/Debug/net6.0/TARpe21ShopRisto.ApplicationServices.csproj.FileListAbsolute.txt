@@ -2,6 +2,7 @@ C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServi
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\bin\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.runtimeconfig.json
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\bin\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.dll
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\bin\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.pdb
+C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.csproj.AssemblyReference.cache
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.AssemblyInfoInputs.cache
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.AssemblyInfo.cs
@@ -11,4 +12,3 @@ C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServi
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.pdb
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.genruntimeconfig.cache
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\ref\TARpe21ShopRisto.ApplicationServices.dll
-C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopRisto.ApplicationServices\obj\Debug\net6.0\TARpe21ShopRisto.ApplicationServices.csproj.AssemblyReference.cache
