@@ -2060,9 +2060,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopKoort.csproj",
-      "projectName": "TARpe21ShopKoort",
-      "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopKoort.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj",
+      "projectName": "TARpe21ShopRisto",
+      "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\obj\\",
       "projectStyle": "PackageReference",

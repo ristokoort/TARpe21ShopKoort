@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TARpe21ShopKoort.bundle.scp.css",
-      "PackagePath": "staticwebassets\\TARpe21ShopKoort.bundle.scp.css"
+      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TARpe21ShopRisto.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TARpe21ShopRisto.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TARpe21ShopKoort.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TARpe21ShopRisto.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TARpe21ShopKoort.props",
-      "PackagePath": "build\\TARpe21ShopKoort.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TARpe21ShopRisto.props",
+      "PackagePath": "build\\TARpe21ShopRisto.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TARpe21ShopKoort.props",
-      "PackagePath": "buildMultiTargeting\\TARpe21ShopKoort.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TARpe21ShopRisto.props",
+      "PackagePath": "buildMultiTargeting\\TARpe21ShopRisto.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TARpe21ShopKoort.props",
-      "PackagePath": "buildTransitive\\TARpe21ShopKoort.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TARpe21ShopRisto.props",
+      "PackagePath": "buildTransitive\\TARpe21ShopRisto.props"
     }
   ],
   "ElementsToRemove": []

@@ -1,4 +1,4 @@
-namespace TARpe21ShopKoort.Models
+namespace TARpe21ShopRisto.Models
 {
     public class ErrorViewModel
     {

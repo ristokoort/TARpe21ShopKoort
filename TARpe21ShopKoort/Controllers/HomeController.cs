@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TARpe21ShopKoort.Models;
+using TARpe21ShopRisto.Models;
 
-namespace TARpe21ShopKoort.Controllers
+namespace TARpe21ShopRisto.Controllers
 {
     public class HomeController : Controller
     {
