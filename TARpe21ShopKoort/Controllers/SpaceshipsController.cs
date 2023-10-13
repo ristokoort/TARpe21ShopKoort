@@ -29,5 +29,9 @@ namespace TARpe21ShopRisto.Controllers
                 });
             return View(result);
             }
+        public IActionResult Add()
+        {
+            return View("Edit"); 
+        }
     }
 }
