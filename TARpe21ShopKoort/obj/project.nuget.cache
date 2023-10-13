@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dyfQyTdjTMkcLhPNwph5aeovBRh6ZiTc7WsYqzCfKGYXsS9isUuRML1TdY77da98Blug3cLGdpKYxbqQEsOrZQ==",
+  "dgSpecHash": "WiUCCucCQnwx841oi6m+5ty59pb02H1b7N7Seg0fHNhg0t88jxx8/HCuTJWSlH6rfAvvLwfQWjMFlfy5teOpXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopKoort.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.22\\microsoft.entityframeworkcore.design.6.0.22.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.22\\microsoft.entityframeworkcore.relational.6.0.22.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.22\\microsoft.entityframeworkcore.sqlserver.6.0.22.nupkg.sha512",
+    "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.22\\microsoft.entityframeworkcore.tools.6.0.22.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

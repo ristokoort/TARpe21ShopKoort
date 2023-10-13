@@ -13,7 +13,7 @@ namespace TARpe21ShopRisto.Core.Domain.Spaceship
        public Guid? Id { get; set; } //globally unique identifier
         public string Name { get; set; } // ship name   
         public string Description { get; set; } // ship description
-        public int[] Dimensions { get; set; } //contains an array of int, with x y z values
+        public ICollection<Dimension> Dimensions { get; set; } //contains an object of Dimension type, which contains three int values representing widht(x) height(y) and depth(z)
         public int PassengerCount { get; set; } //how many passengers does the ship carry
         public int CrewCount { get; set; } // how many crewmembers is needed to operate the ship
         public int CargoWeight { get; set; } // how much cargo can the ship  to carry
@@ -38,5 +38,14 @@ namespace TARpe21ShopRisto.Core.Domain.Spaceship
         public DateTime ModifiedAt { get; set;} // when the entry was last modified
 
 
+    }
+
+    public class Dimension
+    {
+        [Key]
+        public int DimensionID { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public int Depth { get; set; }
     }
 }
