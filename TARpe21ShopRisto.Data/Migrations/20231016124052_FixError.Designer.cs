@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TARpe21ShopRisto.Data;
 
@@ -11,9 +12,10 @@ using TARpe21ShopRisto.Data;
 namespace TARpe21ShopRisto.Data.Migrations
 {
     [DbContext(typeof(TARpe21ShopRistoContext))]
-    partial class TARpe21ShopRistoContextModelSnapshot : ModelSnapshot
+    [Migration("20231016124052_FixError")]
+    partial class FixError
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

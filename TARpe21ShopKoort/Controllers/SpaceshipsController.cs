@@ -14,6 +14,15 @@ namespace TARpe21ShopRisto.Controllers
         private readonly TARpe21ShopRistoContext _context;
         private readonly ISpaceshipsServices _spaceshipsServices;
 
+        public SpaceshipsController
+            (
+            TARpe21ShopRistoContext context,
+            ISpaceshipsServices spaceshipsServices
+            )
+        {
+            _context = context;
+            _spaceshipsServices = spaceshipsServices;
+        }
         public IActionResult Index()
         {
             var result = _context.spaceships
