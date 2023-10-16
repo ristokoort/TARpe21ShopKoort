@@ -1,12 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using TARpe21ShopRisto.Core.ServiceInterface;
 using TARpe21ShopRisto.Data;
+using TARpe21ShopRisto.ApplicationServices.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<TARpe21ShopRistoContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
+builder.Services.AddScoped<ISpaceshipsServices, SpaceshipsServices>();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

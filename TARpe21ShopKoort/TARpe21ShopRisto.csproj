@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TARpe21ShopRisto.ApplicationServices\TARpe21ShopRisto.ApplicationServices.csproj" />
     <ProjectReference Include="..\TARpe21ShopRisto.Data\TARpe21ShopRisto.Data.csproj" />
   </ItemGroup>
 
