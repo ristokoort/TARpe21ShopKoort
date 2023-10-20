@@ -138,5 +138,15 @@ namespace TARpe21ShopRisto.Controllers
             }
             return RedirectToAction(nameof(Index), vm);
         }
-    }
+        [HttpPost]
+        public async Task<IActionResult> Delete(Guid Id)
+        {
+            var spaceshipId = await _spaceshipsServices.Delete(Id);
+            if (spaceshipId == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
+        }
+            }
 }

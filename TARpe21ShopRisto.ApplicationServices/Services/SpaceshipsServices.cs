@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 
 namespace TARpe21ShopRisto.ApplicationServices.Services
 {
@@ -83,5 +84,15 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
             return result;
         
     }
-}
+        public async Task<Spaceship> Delete(Guid Id)
+        {
+            var spaceshipId = await _context.Spaceships
+                .FirstOrDefaultAsync(x => x.Id == Id);
+
+            _context.Spaceships.Remove(spaceshipId);
+            await _context.SaveChangesAsync();
+
+            return spaceshipId;
+        }
+    }
 }
