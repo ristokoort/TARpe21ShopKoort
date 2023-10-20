@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TARpe21ShopRisto.Core.Domain.Spaceship;
+using TARpe21ShopRisto.Core.Domain;
 
 namespace TARpe21ShopRisto.Data
 {
