@@ -1,4 +1,4 @@
-﻿@model TARpe21ShopRisto.Models.Spaceship.SpaceshipEditViewModel
+﻿@model TARpe21ShopRisto.Models.Spaceship.SpaceshipCreateUpdateViewModel
 <h1>Add</h1>
 
 @if (Model!=null)
@@ -11,6 +11,7 @@ else
 }
 <div>
     <form method="post" enctype="multipart/form-data">
+        
         <input asp-for="Id" type="hidden"/>
         <input asp-for="CreatedAt" type="hidden" />
         <input asp-for="ModifiedAt" type="hidden" />
@@ -256,15 +257,22 @@ else
         <input asp-for="Id" type="hidden" />
         <input asp-for="CreatedAt" type="hidden" />
         <input asp-for="ModifiedAt" type="hidden" />
-
         <div class="form-group row">
             <label asp-for="LastMaintenance" class="col-sn-2 col-form-label"></label>
             <div class="col-sn-10">
                 <input asp-for="LastMaintenance" class="form-control" />
             </div>
         </div>
-        <input asp-action="add" asp-controller="spaceships" type="submit" class="btn btn primary" value="Add"/>
-        <a asp-action="edit asp-controller="spaceships" class="btn btn-primary">Edit</a>
-        <input asp-action="Update" asp-controller="spaceships" type="submit" class="btn btn primary" value="Update" />
+        @if (Model.Id.HasValue)
+        {
+            <input asp-action="Update" asp-controller="spaceships" type="submit" class="btn btn primary" value="Update" />
+        }
+        else
+        {
+            <input asp-action="Create" asp-controller="spaceships" type="submit" class="btn btn primary" value="Create" />
+        }
+       
+        <a asp-action="Index" class="btn btn-primary">Cancel</a>
+       
     </form>
 </div>

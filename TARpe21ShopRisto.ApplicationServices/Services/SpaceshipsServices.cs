@@ -23,7 +23,7 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
         {
             _context = context;
         }   
-        public async Task<Spaceship> Add(SpaceshipDto dto)
+        public async Task<Spaceship> Create(SpaceshipDto dto)
         {
             var domain = new Spaceship()
             {
