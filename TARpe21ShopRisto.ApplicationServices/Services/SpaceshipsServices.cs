@@ -86,13 +86,19 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
     }
         public async Task<Spaceship> Delete(Guid Id)
         {
-            var spaceshipId = await _context.Spaceships
+            var spaceshipId = await _context.spaceships
                 .FirstOrDefaultAsync(x => x.Id == Id);
 
-            _context.Spaceships.Remove(spaceshipId);
+            _context.spaceships.Remove(spaceshipId);
             await _context.SaveChangesAsync();
 
             return spaceshipId;
+        }
+        public async Task<Spaceship> GetAsync(Guid Id)
+        {
+            var result = await _context.spaceships
+                .FirstOrDefaultAsync (x => x.Id == Id);
+            return result;
         }
     }
 }
