@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TARpe21ShopRisto.Core.Domain.Spaceship;
+using TARpe21ShopRisto.Core.Domain;
 using TARpe21ShopRisto.Core.ServiceInterface;
 using TARpe21ShopRisto.Data;
 using TARpe21ShopRisto.Core.Dto;

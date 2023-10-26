@@ -13,7 +13,6 @@ namespace TARpe21ShopRisto.Controllers
     {
         private readonly TARpe21ShopRistoContext _context;
         private readonly ISpaceshipsServices _spaceshipsServices;
-
         public SpaceshipsController
             (
             TARpe21ShopRistoContext context,
@@ -32,7 +31,7 @@ namespace TARpe21ShopRisto.Controllers
                     Id = x.Id,
                     Name = x.Name,
                     Type = x.Type,
-                    
+                    PassengerCount = x.PassengerCount,
                     EnginePower = x.EnginePower,
                 });
             return View(result);
@@ -41,7 +40,7 @@ namespace TARpe21ShopRisto.Controllers
         public IActionResult Create()
         {
             SpaceshipCreateUpdateViewModel spaceship = new SpaceshipCreateUpdateViewModel();
-            return View("Edit");
+            return View("CreateUpdate", spaceship);
         }
         [HttpPost]
         public async Task<IActionResult> Create(SpaceshipCreateUpdateViewModel vm)
@@ -54,7 +53,7 @@ namespace TARpe21ShopRisto.Controllers
                 PassengerCount = vm.PassengerCount,
                 CrewCount = vm.CrewCount,
                 CargoWeight = vm.CargoWeight,
-                MaxSpeedInVaccuum = vm.MaxSpeedInVaccuum,
+                
                 BuiltAtDate = vm.BuiltAtDate,
                 MaidenLaunch = vm.MaidenLaunch,
                 Manufacturer = vm.Manufacturer,
@@ -68,13 +67,13 @@ namespace TARpe21ShopRisto.Controllers
                 CreatedAt = vm.CreatedAt,
                 ModifiedAt = vm.ModifiedAt,
                 Files = vm.Files,
-                Image = vm.Image.Select (x=> new FileToDatabaseDto
+                Image = vm.Image.Select(x => new FileToDatabaseDto
                 {
-                    Id= x.Id,
+                    Id = x.ImageId,
                     ImageData = x.ImageData,
-                    ImageTitle = x.SpaceshipId,
+                    ImageTitle = x.ImageTitle,
+                    SpaceshipId = x.SpaceshipId,
                 }).ToArray()
-            
             };
             var result = await _spaceshipsServices.Create(dto);
             if (result == null)
@@ -91,29 +90,40 @@ namespace TARpe21ShopRisto.Controllers
             {
                 return NotFound();
             }
-            var vm = new SpaceshipCreateUpdateViewModel()
-            {
-                Id = spaceship.Id,
-                Name = spaceship.Name,
-                Description = spaceship.Description,
-                PassengerCount = spaceship.PassengerCount,
-                CrewCount = spaceship.CrewCount,
-                CargoWeight = spaceship.CargoWeight,
-                
-                BuiltAtDate = spaceship.BuiltAtDate,
-                MaidenLaunch = spaceship.MaidenLaunch,
-                Manufacturer = spaceship.Manufacturer,
-                IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned,
-                FullTripsCount = spaceship.FullTripsCount,
-                Type = spaceship.Type,
-                EnginePower = spaceship.EnginePower,
-                FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay,
-                MaintenanceCount = spaceship.MaintenanceCount,
-                LastMaintenance = spaceship.LastMaintenance,
-                CreatedAt = spaceship.CreatedAt,
-                ModifiedAt = spaceship.ModifiedAt
-            };
-            return View("CreateUpdate",vm);
+            var photos = await _context.FilesToDatabase
+                .Where(x => x.SpaceshipId == id)
+                .Select(y => new ImageViewModel
+                {
+                    SpaceshipId = y.Id,
+                    ImageId = y.Id,
+                    ImageData = y.ImageData,
+                    ImageTitle = y.ImageTitle,
+                    Image = string.Format("data:image/gif;base64,{0}", Convert.ToBase64String(y.ImageData))
+                }).ToArrayAsync();
+            var vm = new SpaceshipCreateUpdateViewModel();
+            vm.Id = spaceship.Id;
+            vm.Name = spaceship.Name;
+            vm.Description = spaceship.Description;
+            vm.PassengerCount = spaceship.PassengerCount;
+            vm.CrewCount = spaceship.CrewCount;
+            vm.CargoWeight = spaceship.CargoWeight;
+            
+            vm.BuiltAtDate = spaceship.BuiltAtDate;
+            vm.MaidenLaunch = spaceship.MaidenLaunch;
+            vm.Manufacturer = spaceship.Manufacturer;
+            vm.IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned;
+            vm.FullTripsCount = spaceship.FullTripsCount;
+            vm.Type = spaceship.Type;
+            vm.EnginePower = spaceship.EnginePower;
+            vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
+            vm.MaintenanceCount = spaceship.MaintenanceCount;
+            vm.LastMaintenance = spaceship.LastMaintenance;
+            vm.CreatedAt = spaceship.CreatedAt;
+            vm.ModifiedAt = spaceship.ModifiedAt;
+            vm.Image.AddRange(photos);
+
+
+            return View("CreateUpdate", vm);
         }
         [HttpPost]
         public async Task<IActionResult> Update(SpaceshipCreateUpdateViewModel vm)
@@ -147,57 +157,59 @@ namespace TARpe21ShopRisto.Controllers
             }
             return RedirectToAction(nameof(Index), vm);
         }
-        [HttpPost]
-        public async Task<IActionResult> DeleteConfirmation(Guid Id)
+
+        [HttpGet]
+        public async Task<IActionResult> Details(Guid id)
         {
-            var spaceshipId = await _spaceshipsServices.Delete(Id);
-            if (spaceshipId == null)
+            var spaceship = await _spaceshipsServices.GetAsync(id);
+
+            if (spaceship == null)
             {
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            return RedirectToAction(nameof(Index));
+
+            var photos = await _context.FilesToDatabase
+               .Where(x => x.SpaceshipId == id)
+               .Select(y => new ImageViewModel
+               {
+                   SpaceshipId = y.Id,
+                   ImageId = y.Id,
+                   ImageData = y.ImageData,
+                   ImageTitle = y.ImageTitle,
+                   Image = string.Format("data:image/gif;base64,{0}", Convert.ToBase64String(y.ImageData))
+               }).ToArrayAsync();
+
+            var vm = new SpaceshipCreateUpdateViewModel();
+            vm.Id = spaceship.Id;
+            vm.Name = spaceship.Name;
+            vm.Description = spaceship.Description;
+            vm.PassengerCount = spaceship.PassengerCount;
+            vm.CrewCount = spaceship.CrewCount;
+            vm.CargoWeight = spaceship.CargoWeight;
+            
+            vm.BuiltAtDate = spaceship.BuiltAtDate;
+            vm.MaidenLaunch = spaceship.MaidenLaunch;
+            vm.Manufacturer = spaceship.Manufacturer;
+            vm.IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned;
+            vm.FullTripsCount = spaceship.FullTripsCount;
+            vm.Type = spaceship.Type;
+            vm.EnginePower = spaceship.EnginePower;
+            vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
+            vm.MaintenanceCount = spaceship.MaintenanceCount;
+            vm.LastMaintenance = spaceship.LastMaintenance;
+            vm.CreatedAt = spaceship.CreatedAt;
+            vm.ModifiedAt = spaceship.ModifiedAt;
+            vm.Image.AddRange(photos);
+            return View(vm);
         }
         [HttpGet]
-        public async Task<IActionResult> Details(Guid Id)
+        public async Task<IActionResult> Delete(Guid Id)
         {
             var spaceship = await _spaceshipsServices.GetAsync(Id);
 
             if (spaceship == null)
             {
                 return NotFound();
-            }
-            var vm = new SpaceShipDetailsViewModel()
-            {
-                Id = spaceship.Id,
-                Name = spaceship.Name,
-                Description = spaceship.Description,
-                PassengerCount = spaceship.PassengerCount,
-                CrewCount = spaceship.CrewCount,
-                CargoWeight = spaceship.CargoWeight,
-
-                BuiltAtDate = spaceship.BuiltAtDate,
-                MaidenLaunch = spaceship.MaidenLaunch,
-                Manufacturer = spaceship.Manufacturer,
-                IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned,
-                FullTripsCount = spaceship.FullTripsCount,
-                Type = spaceship.Type,
-                EnginePower = spaceship.EnginePower,
-                FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay,
-                MaintenanceCount = spaceship.MaintenanceCount,
-                LastMaintenance = spaceship.LastMaintenance,
-                CreatedAt = spaceship.CreatedAt,
-                ModifiedAt = spaceship.ModifiedAt
-            };
-            return View (vm);
-        }
-        [HttpGet]
-        public async Task<IActionResult> Delete(Guid Id)
-        {
-            var spaceship =await _spaceshipsServices.GetAsync (Id);
-
-            if (spaceship == null)
-            {
-                return NotFound ();
             }
             var vm = new SpaceshipDeleteViewModel()
             {
@@ -207,7 +219,7 @@ namespace TARpe21ShopRisto.Controllers
                 PassengerCount = spaceship.PassengerCount,
                 CrewCount = spaceship.CrewCount,
                 CargoWeight = spaceship.CargoWeight,
-
+                
                 BuiltAtDate = spaceship.BuiltAtDate,
                 MaidenLaunch = spaceship.MaidenLaunch,
                 Manufacturer = spaceship.Manufacturer,
@@ -223,6 +235,15 @@ namespace TARpe21ShopRisto.Controllers
             };
             return View(vm);
         }
-
-     }
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmation(Guid Id)
+        {
+            var spaceshipId = await _spaceshipsServices.Delete(Id);
+            if (spaceshipId == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
+        }
+    }
 }

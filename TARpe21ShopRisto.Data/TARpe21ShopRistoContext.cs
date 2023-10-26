@@ -13,5 +13,7 @@ namespace TARpe21ShopRisto.Data
         public TARpe21ShopRistoContext(DbContextOptions<TARpe21ShopRistoContext>options) : base(options) { }
 
         public DbSet<Spaceship> spaceships { get; set; }
+
+        public DbSet<FileToDatabase> FilesToDatabase { get; set; }
     }
 }

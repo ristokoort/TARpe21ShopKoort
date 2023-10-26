@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using TARpe21ShopRisto.Core.Domain.Spaceship;
+using TARpe21ShopRisto.Core.Domain;
 
 namespace TARpe21ShopRisto.Models
 {

@@ -79,3 +79,11 @@ C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.pdb
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.genruntimeconfig.cache
 C:\Users\opilane\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\ref\TARpe21ShopRisto.dll
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.csproj.AssemblyReference.cache
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.AssemblyInfoInputs.cache
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.AssemblyInfo.cs
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.csproj.CoreCompileInputs.cache
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.RazorAssemblyInfo.cache
+C:\Users\Risto\source\repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.RazorAssemblyInfo.cs
