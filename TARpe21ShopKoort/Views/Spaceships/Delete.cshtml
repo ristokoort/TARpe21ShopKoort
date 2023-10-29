@@ -3,13 +3,12 @@
     string displaystring = "";
 }
 
-
-    <h1>Delete</h1>
+<h1>Delete</h1>
 
 <div>
 
     <h4>Spaceship</h4>
-    <hr/>
+    <hr />
     <dl>
         <div class="form-group row">
             <label asp-for="Id" class="col-sm-2 col-form-label"></label>
@@ -68,14 +67,13 @@
 
         <div class="form-group row">
             <label asp-for="IsSpaceshipPreviouslyOwned" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.IsSpaceshipPreviouslyOwned)
             @if (Model.IsSpaceshipPreviouslyOwned)
             {
-                displaystring = "Yes it is preowned";
+                displaystring = "Yes, it is preowned";
             }
             else
             {
-                displaystring = "no te spaceship is new";
+                displaystring = "No, the spaceship is new.";
             }
             @(displaystring)
         </div>
@@ -114,10 +112,15 @@
             <label asp-for="ModifiedAt" class="col-sm-2 col-form-label"></label>
             @Html.DisplayFor(model => model.ModifiedAt)
         </div>
+
+        @foreach (var images in Model.Image)
+        {
+            <partial name="_Images" model="images" />
+        }
     </dl>
     <form asp-action="DeleteConfirmation">
-        <input type="hidden" asp-for="Id"/>
-        <input type="submit" value="Delete" class="btn btn-danger"/>
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
     </form>
     <a asp-action="Index" asp-controller="spaceships" class="btn btn-primary">Cancel</a>
 

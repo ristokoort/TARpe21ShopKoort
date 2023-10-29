@@ -24,10 +24,12 @@ namespace TARpe21ShopRisto.Models.Spaceship
     public int MaintenanceCount { get; set; } // how many maintenance sessions have been conducted on this ship
     public DateTime LastMaintenance { get; set; } // when was the last maintenance performed
 
+        public List<ImageViewModel> Image { get; set; } = new List<ImageViewModel>();
 
-    // only in database
 
-    public DateTime CreatedAt { get; set; } // when the entry was created
+        // only in database
+
+        public DateTime CreatedAt { get; set; } // when the entry was created
     public DateTime ModifiedAt { get; set; } // when the entry has been modified last
 }
 }
