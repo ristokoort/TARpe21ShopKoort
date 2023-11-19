@@ -40,4 +40,8 @@
     <ProjectReference Include="..\TARpe21ShopRisto.Data\TARpe21ShopRisto.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Cars\" />
+  </ItemGroup>
+
 </Project>
