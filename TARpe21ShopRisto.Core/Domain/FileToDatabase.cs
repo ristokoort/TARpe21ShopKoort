@@ -12,6 +12,5 @@ namespace TARpe21ShopRisto.Core.Domain
         public string ImageTitle { get; set; }
         public byte[] ImageData { get; set; }
         public Guid? SpaceshipId { get; set; }
-
     }
 }

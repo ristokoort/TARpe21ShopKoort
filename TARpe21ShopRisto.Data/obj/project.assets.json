@@ -2213,9 +2213,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
       "projectName": "TARpe21ShopRisto.Data",
-      "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
+      "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
       "packagesPath": "C:\\Users\\Risto\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -2239,8 +2239,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
-              "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj"
+            "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
+              "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj"
             }
           }
         }
@@ -2294,15 +2294,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.24, 6.0.24]"
+            "version": "[6.0.25, 6.0.25]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.24, 6.0.24]"
+            "version": "[6.0.25, 6.0.25]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.24, 6.0.24]"
+            "version": "[6.0.25, 6.0.25]"
           }
         ],
         "frameworkReferences": {
@@ -2310,7 +2310,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
       }
     }
   },

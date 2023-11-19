@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using TARpe21ShopRisto.Core.Domain;
 
-namespace TARpe21ShopRisto.Models
+namespace TARpe21ShopRisto.Models.Spaceship
 {
     public class SpaceshipIndexViewModel
     {
@@ -9,7 +9,7 @@ namespace TARpe21ShopRisto.Models
         public Guid? Id { get; set; } // globally unique identifier
         public string Name { get; set; } // ship name
         public string Description { get; set; } // ship description
-
+        //public ICollection<Dimension> Dimensions { get; set; } // contains an pbject of Dimension type, wwhich contains three int values representing width(x) height(y) and depth (z) values
         public int PassengerCount { get; set; } // how many passengers does the ship carry
         public int CrewCount { get; set; } // how many crew members is needed to operate the ship
         public int CargoWeight { get; set; } // how much cargo the ship is able to carry

@@ -1,7 +1,5 @@
-﻿@model TARpe21ShopRisto.Models.Spaceship.SpaceShipDetailsViewModel
-@{
-    string displaystring = "";
-}
+﻿@model TARpe21ShopRisto.Models.Spaceship.SpaceshipDetailsViewModel
+@{string displaystring = "";}
 
 <h1>Details</h1>
 
@@ -115,7 +113,7 @@
 
         @foreach (var images in Model.Image)
         {
-            <partial name="_Images" model="images" />
+            <partial name="_Images" model="images"/>
         }
 
     </dl>

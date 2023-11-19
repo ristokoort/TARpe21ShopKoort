@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TARpe21ShopRisto.Models;
-using TARpe21ShopRisto.Data;
-using TARpe21ShopRisto.Core.ServiceInterface;
-using TARpe21ShopRisto.Core.Dto;
-using System.Runtime.Intrinsics.X86;
-using TARpe21ShopRisto.Models.Spaceship;
 using TARpe21ShopRisto.ApplicationServices.Services;
+using TARpe21ShopRisto.Core.Dto;
+using TARpe21ShopRisto.Core.ServiceInterface;
+using TARpe21ShopRisto.Data;
+using TARpe21ShopRisto.Models;
+using TARpe21ShopRisto.Models.Spaceship;
 
 namespace TARpe21ShopRisto.Controllers
 {
@@ -16,10 +15,10 @@ namespace TARpe21ShopRisto.Controllers
         private readonly ISpaceshipsServices _spaceshipsServices;
         private readonly IFilesServices _filesServices;
         public SpaceshipsController
-           (
-           TARpe21ShopRistoContext context,
-           ISpaceshipsServices spaceshipsServices,
-           IFilesServices filesServices
+            (
+            TARpe21ShopRistoContext context,
+            ISpaceshipsServices spaceshipsServices,
+            IFilesServices filesServices
             )
         {
             _context = context;
@@ -28,7 +27,7 @@ namespace TARpe21ShopRisto.Controllers
         }
         public IActionResult Index()
         {
-            var result = _context.spaceships
+            var result = _context.Spaceships
                 .OrderBy(x => x.CreatedAt)
                 .Select(x => new SpaceshipIndexViewModel
                 {
@@ -110,10 +109,10 @@ namespace TARpe21ShopRisto.Controllers
             vm.Id = spaceship.Id;
             vm.Name = spaceship.Name;
             vm.Description = spaceship.Description;
-            vm.PassengerCount = spaceship.PassengerCount;
+            vm.PassengerCount = spaceship.PassengerCount;   
             vm.CrewCount = spaceship.CrewCount;
             vm.CargoWeight = spaceship.CargoWeight;
-            
+            vm.MaxSpeedInVaccuum = spaceship.MaxSpeedInVaccuum;
             vm.BuiltAtDate = spaceship.BuiltAtDate;
             vm.MaidenLaunch = spaceship.MaidenLaunch;
             vm.Manufacturer = spaceship.Manufacturer;
@@ -131,7 +130,7 @@ namespace TARpe21ShopRisto.Controllers
 
             return View("CreateUpdate", vm);
         }
-        [HttpPost]
+        [HttpPost]        
         public async Task<IActionResult> Update(SpaceshipCreateUpdateViewModel vm)
         {
             var dto = new SpaceshipDto()
@@ -171,7 +170,7 @@ namespace TARpe21ShopRisto.Controllers
             }
             return RedirectToAction(nameof(Index), vm);
         }
-
+        
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {
@@ -193,14 +192,14 @@ namespace TARpe21ShopRisto.Controllers
                    Image = string.Format("data:image/gif;base64,{0}", Convert.ToBase64String(y.ImageData))
                }).ToArrayAsync();
 
-            var vm = new SpaceShipDetailsViewModel();
+            var vm = new SpaceshipDetailsViewModel();
             vm.Id = spaceship.Id;
             vm.Name = spaceship.Name;
             vm.Description = spaceship.Description;
             vm.PassengerCount = spaceship.PassengerCount;
             vm.CrewCount = spaceship.CrewCount;
             vm.CargoWeight = spaceship.CargoWeight;
-            
+            vm.MaxSpeedInVaccuum = spaceship.MaxSpeedInVaccuum;
             vm.BuiltAtDate = spaceship.BuiltAtDate;
             vm.MaidenLaunch = spaceship.MaidenLaunch;
             vm.Manufacturer = spaceship.Manufacturer;
@@ -217,7 +216,7 @@ namespace TARpe21ShopRisto.Controllers
             return View(vm);
         }
         [HttpGet]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult>Delete(Guid id)
         {
 
             var spaceship = await _spaceshipsServices.GetAsync(id);
@@ -244,7 +243,7 @@ namespace TARpe21ShopRisto.Controllers
             vm.PassengerCount = spaceship.PassengerCount;
             vm.CrewCount = spaceship.CrewCount;
             vm.CargoWeight = spaceship.CargoWeight;
-            
+            vm.MaxSpeedInVaccuum = spaceship.MaxSpeedInVaccuum;
             vm.BuiltAtDate = spaceship.BuiltAtDate;
             vm.MaidenLaunch = spaceship.MaidenLaunch;
             vm.Manufacturer = spaceship.Manufacturer;
@@ -287,4 +286,3 @@ namespace TARpe21ShopRisto.Controllers
         }
     }
 }
-

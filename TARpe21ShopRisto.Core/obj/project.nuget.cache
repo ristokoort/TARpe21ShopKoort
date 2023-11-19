@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AB56S6dIBmCxLEuMeJYXaXNU6ciby3P3SI+/FKy9xCmqayZ9jg8g0b/Yl1rsPIJPrlD339t0J9r16I73NmQyLg==",
+  "dgSpecHash": "fJXiFSMbuTxYGsRdHGFhVzibPyZMcW4ut302CQ+FdJyvnMEZURjU0EykDQikqPq4otNWL5nJoRZ4DpY/SPM3eQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
+  "projectFilePath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Risto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Risto\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
@@ -52,9 +52,9 @@
     "C:\\Users\\Risto\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Risto\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\Risto\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Risto\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Risto\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Risto\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512"
+    "C:\\Users\\Risto\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Risto\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Risto\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
   ],
   "logs": [
     {

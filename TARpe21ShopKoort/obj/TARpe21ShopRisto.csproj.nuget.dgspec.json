@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj": {}
+    "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj": {
+    "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj",
+        "projectUniqueName": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj",
         "projectName": "TARpe21ShopRisto",
-        "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj",
+        "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\TARpe21ShopRisto.csproj",
         "packagesPath": "C:\\Users\\Risto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\obj\\",
+        "outputPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -27,18 +27,18 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.310\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.311\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj": {
-                "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj"
+              "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj": {
+                "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj"
               },
-              "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj": {
-                "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj"
+              "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj": {
+                "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj"
               }
             }
           }
@@ -88,19 +88,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             }
           ],
           "frameworkReferences": {
@@ -111,18 +111,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj": {
+    "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj",
+        "projectUniqueName": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj",
         "projectName": "TARpe21ShopRisto.ApplicationServices",
-        "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj",
+        "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj",
         "packagesPath": "C:\\Users\\Risto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\obj\\",
+        "outputPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -144,8 +144,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj": {
-                "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj"
+              "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj": {
+                "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj"
               }
             }
           }
@@ -163,6 +163,10 @@
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Abstractions": {
               "target": "Package",
@@ -187,6 +191,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.22, )"
+            },
+            "Nancy": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             }
           },
           "imports": [
@@ -203,15 +211,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             }
           ],
           "frameworkReferences": {
@@ -219,18 +227,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
+    "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
         "projectName": "TARpe21ShopRisto.Core",
-        "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
+        "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
         "packagesPath": "C:\\Users\\Risto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\obj\\",
+        "outputPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -307,15 +315,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             }
           ],
           "frameworkReferences": {
@@ -323,18 +331,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj": {
+    "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
         "projectName": "TARpe21ShopRisto.Data",
-        "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
+        "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
         "packagesPath": "C:\\Users\\Risto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\obj\\",
+        "outputPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -356,8 +364,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
-                "projectPath": "C:\\Users\\Risto\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj"
+              "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
+                "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj"
               }
             }
           }
@@ -411,15 +419,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
+              "version": "[6.0.25, 6.0.25]"
             }
           ],
           "frameworkReferences": {
@@ -427,7 +435,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     }
