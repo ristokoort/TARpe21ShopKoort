@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Risto\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Risto/Source/Repos/TARpe21ShopKoort/TARpe21ShopKoort/Views/Cars/CreateUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGVVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Risto/Source/Repos/TARpe21ShopKoort/TARpe21ShopKoort/Views/Cars/DeleteDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGVEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Risto/Source/Repos/TARpe21ShopKoort/TARpe21ShopKoort/Views/Cars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Risto/Source/Repos/TARpe21ShopKoort/TARpe21ShopKoort/Views/Cars/_Images.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xfSW1hZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Risto/Source/Repos/TARpe21ShopKoort/TARpe21ShopKoort/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

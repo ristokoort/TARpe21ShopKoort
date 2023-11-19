@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+
+using TARpe21ShopRisto.ApplicationServices.Services;
 using TARpe21ShopRisto.Core.Domain;
 using TARpe21ShopRisto.Core.Dto;
 using TARpe21ShopRisto.Data;
@@ -34,7 +36,7 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
                             SpaceshipId = domain.Id,
                         };
 
-                        photo.CopyTo( target );
+                        photo.CopyTo(target);
                         files.ImageData = target.ToArray();
 
                         _context.FilesToDatabase.Add(files);
@@ -42,7 +44,7 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
                 }
             }
         }
-        public async Task <FileToDatabase> RemoveImage(FileToDatabaseDto dto)
+        public async Task<FileToDatabase> RemoveImage(FileToDatabaseDto dto)
         {
             var image = await _context.FilesToDatabase
                 .Where(x => x.Id == dto.Id)
@@ -76,8 +78,8 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
                 foreach (var image in dto.Files)
                 {
                     string uploadsFolder = Path.Combine(_webHost.WebRootPath, "multipleFileUpload");
-                    uniqueFileName = Guid.NewGuid().ToString() +"_" + image.FileName;
-                    string filePath = Path.Combine(uploadsFolder,uniqueFileName);
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         image.CopyTo(fileStream);
@@ -92,9 +94,39 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
                 }
             }
         }
+
+        public void FilesToApi(CarDto dto, Car car)
+        {
+            string uniqueFileName = null;
+            if (dto.Files != null && dto.Files.Count > 0)
+            {
+                if (!Directory.Exists(_webHost.WebRootPath + "\\multipleFileUpload\\"))
+                {
+                    Directory.CreateDirectory(_webHost.WebRootPath + "\\multipleFileUpload\\");
+                }
+                foreach (var image in dto.Files)
+                {
+                    string uploadsFolder = Path.Combine(_webHost.WebRootPath, "multipleFileUpload");
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        image.CopyTo(fileStream);
+                        FileToApi path = new FileToApi
+                        {
+                            Id = Guid.NewGuid(),
+                            ExistingFilePath = uniqueFileName,
+                            CarId = car.Id,
+                        };
+                        _context.FilesToApi.AddAsync(path);
+                    }
+                }
+            }
+        }
+
         public async Task<List<FileToApi>> RemoveImagesFromApi(FileToApiDto[] dtos)
         {
-            foreach (var dto in dtos) 
+            foreach (var dto in dtos)
             {
                 var imageId = await _context.FilesToApi
                     .FirstOrDefaultAsync(x => x.ExistingFilePath == dto.ExistingFilePath);
