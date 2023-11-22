@@ -16,7 +16,7 @@ namespace TARpe21ShopRisto.Core.Domain
         public int Hp { get; set; } //horsepower
         public int FuelTankCapacity { get; set; }
         public int TireSize { get; set; }
-        public string Previous_Ownership { get; set; }
+        public bool Previous_Ownership { get; set; }
         public List<FileToApi> FilesToApi { get; set; } = new List<FileToApi>();
        
 

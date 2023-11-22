@@ -16,7 +16,7 @@ namespace TARpe21ShopRisto.Core.Dto
         public int Hp { get; set; } //horsepower
         public int FuelTankCapacity { get; set; }
         public int TireSize { get; set; }
-        public string Previous_Ownership { get; set; }
+        public bool Previous_Ownership { get; set; }
         public List<IFormFile> Files { get; set; }
         public IEnumerable<FileToApiDto> FilesToApiDtos { get; set; } = new List<FileToApiDto>();
         

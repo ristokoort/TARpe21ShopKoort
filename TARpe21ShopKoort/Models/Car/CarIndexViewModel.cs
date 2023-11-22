@@ -9,7 +9,7 @@
         public int Hp { get; set; } //horsepower
         public int FuelTankCapacity { get; set; }
         public int TireSize { get; set; }
-        public string Previous_Ownership { get; set; }
+        public bool Previous_Ownership { get; set; }
 
         //Db only
         public DateTime CreatedAt { get; set; } // when the entry was created

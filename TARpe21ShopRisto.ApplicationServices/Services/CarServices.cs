@@ -69,7 +69,7 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
         {
             Car car = new Car();
 
-            car.Id = Guid.NewGuid();
+            car.Id = dto.Id;
             car.Brand = dto.Brand;
             car.Transmission = dto.Transmission;
             car.EngineType = dto.EngineType;

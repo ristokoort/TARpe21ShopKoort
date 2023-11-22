@@ -1,5 +1,6 @@
-﻿﻿@using TARpe21ShopRisto.Core.Domain;
+﻿@using TARpe21ShopRisto.Core.Domain;
 @model TARpe21ShopRisto.Models.Car.CarCreateUpdateViewModel
+
 @if (Model.Id.HasValue)
 {
     <h1>Update</h1>
@@ -8,93 +9,96 @@ else
 {
     <h1>Create</h1>
 }
-<div>
+
+<div class="container mt-5">
     <form method="post" enctype="multipart/form-data">
         <input asp-for="Id" type="hidden" />
         <input asp-for="CreatedAt" type="hidden" />
         <input asp-for="ModifiedAt" type="hidden" />
 
         <div class="form-group row">
-            <label asp-for="Brand" class="col-sm-2 col-form-label"></label>
+            <label asp-for="Brand" class="col-sm-2 col-form-label">Brand:</label>
             <div class="col-sm-10">
                 <input asp-for="Brand" class="form-control" />
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label asp-for="Transmission" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="Transmission" class="form-control" />
+        <div class="form-group row">
+            <label asp-for="Transmission" class="col-sm-2 col-form-label">Transmission:</label>
+            <div class="col-sm-10">
+                <input asp-for="Transmission" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="EngineType" class="col-sm-2 col-form-label">Engine Type:</label>
+            <div class="col-sm-10">
+                <input asp-for="EngineType" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Hp" class="col-sm-2 col-form-label">Hp:</label>
+            <div class="col-sm-10">
+                <input asp-for="Hp" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Previous_Ownership" class="col-sm-2 col-form-label">Previous Ownership:</label>
+            <div class="col-sm-10">
+                <input asp-for="Previous_Ownership" class="form-check" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="FuelTankCapacity" class="col-sm-2 col-form-label">Fuel Tank Capacity:</label>
+            <div class="col-sm-10">
+                <input asp-for="FuelTankCapacity" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="TireSize" class="col-sm-2 col-form-label">Tire Size:</label>
+            <div class="col-sm-10">
+                <input asp-for="TireSize" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Files" class="col-sm-2 col-form-label">Images:</label>
+            <div class="col-sm-10">
+                <div class="custom-file">
+                    <input class="form-control custom-file-input" asp-for="Files" multiple type="file" />
+                    <label class="custom-file-label">Choose File...</label>
                 </div>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label asp-for="EngineType" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="EngineType" class="form-control" />
-                </div>
-            </div>
+        <hr />
 
-            <div class="form-group row">
-                <label asp-for="Hp" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="Hp" class="form-control" />
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="Previous_Ownership" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="Previous_Ownership" class="form-control" />
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="FuelTankCapacity" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="FuelTankCapacity" class="form-control" />
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="TireSize" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input asp-for="TireSize" class="form-control" />
-                </div>
-            </div>
-            @**@
-
-            <div>
-                <label asp-for="Files" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-5">
-                    <div class="custom-file">
-                        <input class="form-control custom-file-input" asp-for="Files" multiple type="file" />
-                        <label class="custom-file-label">Choose File...</label>
-                    </div>
-                </div>
-            </div>
-
-            <hr />
-
-            @if (Model.FileToApiViewModels != null)
+        @if (Model.FileToApiViewModels != null)
+        {
+            @foreach (var images in Model.FileToApiViewModels)
             {
-                @foreach (var images in Model.FileToApiViewModels)
+                <partial name="_Images" model="images" />
+                <input asp-action="removeImage" asp-controller="cars" asp-route-imageID="@images.ImageId" type="submit" class="btn btn-danger mt-2" value="Remove Image" />
+            }
+        }
+
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                @if (Model.Id.HasValue)
                 {
-                    <partial name="_Images" model="images" />
-                    <input asp-action="removeImage" asp-controller="cars" asp-route-imageID="@images.ImageId" type="submit" class="btn btn-danger" value="Remove Image" />
+                    <input asp-action="update" asp-controller="cars" type="submit" class="btn btn-primary" value="Update" />
                 }
-            }
-
-            @if (Model.Id.HasValue)
-            {
-                <input asp-action="update" asp-controller="cars" type="submit" class="btn btn-primary" value="Update" />
-            }
-            else
-            {
-                <input asp-action="create" asp-controller="cars" type="submit" class="btn btn-primary" value="Create" />
-            }
-
-            <a asp-action="Index" class="btn btn-primary">Back</a>
-
+                else
+                {
+                    <input asp-action="create" asp-controller="cars" type="submit" class="btn btn-primary" value="Create" />
+                }
+                <a asp-action="Index" class="btn btn-secondary ml-2">Back</a>
+            </div>
+        </div>
     </form>
 </div>
 

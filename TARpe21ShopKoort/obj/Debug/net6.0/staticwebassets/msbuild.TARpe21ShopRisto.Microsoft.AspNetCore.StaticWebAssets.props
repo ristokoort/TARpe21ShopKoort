@@ -976,6 +976,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\multipleFileUpload\03897a06-435d-4518-bf56-26fbc8ed1b86_auto.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\multipleFileUpload\8a5593ea-ddb0-42d9-b635-c6144a77175d_auto.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>TARpe21ShopRisto</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TARpe21ShopRisto</BasePath>
+      <RelativePath>multipleFileUpload/8a5593ea-ddb0-42d9-b635-c6144a77175d_auto.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\multipleFileUpload\8a5593ea-ddb0-42d9-b635-c6144a77175d_auto.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\multipleFileUpload\b13bbeef-2551-47a1-be67-3c1c40057063_NC1.PNG))">
       <SourceType>Package</SourceType>
       <SourceId>TARpe21ShopRisto</SourceId>

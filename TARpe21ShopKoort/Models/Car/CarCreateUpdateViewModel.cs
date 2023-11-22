@@ -11,7 +11,7 @@ namespace TARpe21ShopRisto.Models.Car
         public int Hp { get; set; } //horsepower
         public int FuelTankCapacity { get; set; }
         public int TireSize { get; set; }
-        public string Previous_Ownership { get; set; }
+        public bool Previous_Ownership { get; set; }
 
         public List<IFormFile> Files { get; set; }
         public List<FileToApiViewModel> FileToApiViewModels { get; set; } = new List<FileToApiViewModel>();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y9jbTr7+pJPwz3w2sDSK4Xk/v1LW0ZQDAeRbjAt7mPQ=",
+  "Hash": "LVRtyUDjfA65kWiZ8iMfN6dXjsci4s3knCnHDaNrCjI=",
   "Source": "TARpe21ShopRisto",
   "BasePath": "_content/TARpe21ShopRisto",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\multipleFileUpload\\03897a06-435d-4518-bf56-26fbc8ed1b86_auto.png"
+    },
+    {
+      "Identity": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\wwwroot\\multipleFileUpload\\8a5593ea-ddb0-42d9-b635-c6144a77175d_auto.png",
+      "SourceId": "TARpe21ShopRisto",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\wwwroot\\",
+      "BasePath": "_content/TARpe21ShopRisto",
+      "RelativePath": "multipleFileUpload/8a5593ea-ddb0-42d9-b635-c6144a77175d_auto.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\multipleFileUpload\\8a5593ea-ddb0-42d9-b635-c6144a77175d_auto.png"
     },
     {
       "Identity": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopKoort\\wwwroot\\multipleFileUpload\\b13bbeef-2551-47a1-be67-3c1c40057063_NC1.PNG",
