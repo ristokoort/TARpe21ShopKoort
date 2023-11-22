@@ -2186,23 +2186,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Risto\\.nuget\\packages\\": {},
+    "C:\\Users\\opilane\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
       "projectName": "TARpe21ShopRisto.Core",
-      "projectPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
-      "packagesPath": "C:\\Users\\Risto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Risto\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\obj\\",
+      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
+      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Risto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2270,26 +2270,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   },

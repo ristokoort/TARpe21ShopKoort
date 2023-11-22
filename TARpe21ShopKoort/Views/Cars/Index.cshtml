@@ -2,44 +2,49 @@
 @{
     int rowNumber = 1;
 }
-<div class="h1">Cars</div>
-<div>
-    <a asp-action="Create" asp-controller="cars" type="submit" class="btn btn-primary">Create</a>
-</div>
-<form method="post">
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Product</th>
-                <th scope="col">Brand</th>
-                <th scope="col">Transmission</th>
-                <th scope="col">Hp</th>
-                <th scope="col">EngineType</th>
-                <th scope="col">FuelTankCapacity</th>
-                <th scope="col">TireSize</th>
-                <th scope="col">Previous_Ownership</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var car in Model)
-            {
+
+<div class="container mt-5">
+    <h1>Cars</h1>
+    <div class="mb-3">
+        <a asp-action="Create" asp-controller="cars" class="btn btn-outline-dark">Create</a>
+    </div>
+
+    <form method="post">
+        <table class="table table-hover">
+            <thead class="thead-dark">
                 <tr>
-                    <td>@rowNumber</td>
-                    <td>@car.Brand</td>
-                    <td>@car.Transmission</td>
-                    <td>@car.Hp</td>
-                    <td>@car.EngineType</td>
-                    <td>@car.FuelTankCapacity</td>
-                    <td>@car.TireSize</td>
-                    <td>@car.Previous_Ownership</td>
-                    <td>
-                        <a asp-action="details" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-info">Details</a>
-                        <a asp-action="Update" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-primary">Edit</a>
-                        <a asp-action="delete" asp-controller="cars" asp-route-id="@car.Id" type="submit" class="btn btn-danger">Delete</a>
-                    </td>
+                    <th scope="col">#</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Transmission</th>
+                    <th scope="col">Hp</th>
+                    <th scope="col">Engine Type</th>
+                    <th scope="col">Fuel Tank Capacity</th>
+                    <th scope="col">Tire Size</th>
+                    <th scope="col">Previous Ownership</th>
+                    <th scope="col">Actions</th>
                 </tr>
-                rowNumber++;
-            }
-        </tbody>
-    </table>
-</form>
+            </thead>
+            <tbody>
+                @foreach (var car in Model)
+                {
+                    <tr>
+                        <td>@rowNumber</td>
+                        <td>@car.Brand</td>
+                        <td>@car.Transmission</td>
+                        <td>@car.Hp</td>
+                        <td>@car.EngineType</td>
+                        <td>@car.FuelTankCapacity</td>
+                        <td>@car.TireSize</td>
+                        <td>@car.Previous_Ownership</td>
+                        <td>
+                            <a asp-action="details" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-outline-dark btn-sm">Details</a>
+                            <a asp-action="Update" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-outline-dark btn-sm">Edit</a>
+                            <a asp-action="delete" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-outline-dark btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                    rowNumber++;
+                }
+            </tbody>
+        </table>
+    </form>
+</div>

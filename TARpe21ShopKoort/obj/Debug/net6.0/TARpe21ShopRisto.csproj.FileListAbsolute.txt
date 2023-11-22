@@ -165,3 +165,8 @@ C:\Users\Risto\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\r
 C:\Users\Risto\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.pdb
 C:\Users\Risto\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\TARpe21ShopRisto.genruntimeconfig.cache
 C:\Users\Risto\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\obj\Debug\net6.0\ref\TARpe21ShopRisto.dll
+C:\Users\opilane\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\opilane\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\opilane\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\bin\Debug\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\opilane\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\bin\Debug\net6.0\Nancy.dll
+C:\Users\opilane\Source\Repos\TARpe21ShopKoort\TARpe21ShopKoort\bin\Debug\net6.0\Newtonsoft.Json.dll
