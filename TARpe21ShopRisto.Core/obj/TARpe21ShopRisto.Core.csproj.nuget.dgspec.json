@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {}
+    "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
+    "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
         "projectName": "TARpe21ShopRisto.Core",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
+        "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\TARpe21ShopRisto.Core.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

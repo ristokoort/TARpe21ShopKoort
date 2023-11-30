@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wAJehT8/SFHDjDfyG8LyMU9J6UVDsYLae9rzLY3fsdr+nLRHjSvZ+97ooo/5XpeZEQPLA5vKV2IFwSp7MIVLCg==",
+  "dgSpecHash": "ypYsoiwL02b2Ddo5cGfVoGodW6YVdAzHw5jc1FXZR0eLrJc3fZK50bQTipQO4BqHn+k97PAU9DhSfXgtBCi8eA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.ApplicationServices\\TARpe21ShopRisto.ApplicationServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

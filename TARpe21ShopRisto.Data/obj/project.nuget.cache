@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gr0TtKEocLbXDNlgd+LklsamusFKRpJiXxmXfHbLOMmaOg0fkwm/eiN4qjrAlPeNAcVrs4FUXLJrJEPHKV/DcQ==",
+  "dgSpecHash": "HcTaLNz21OSZ/66OrnzyjmrvV2uPErh+OX9QgbohiaxX+6ZNBI1GjduPBkDiIgzYz079i72eRwyrCnEfdsBofw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\source\\repos\\TARpe21ShopKoort\\TARpe21ShopRisto.Data\\TARpe21ShopRisto.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",

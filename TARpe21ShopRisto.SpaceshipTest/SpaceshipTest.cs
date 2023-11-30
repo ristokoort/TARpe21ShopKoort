@@ -116,5 +116,15 @@ namespace TARpe21ShopRisto.SpaceshipTest
         //{
 
         //}
+
+        //[Fact]
+        //public async Task ShouldNot_DeleteByIdSpaceship_WhenDidNotDeleteSpaceship()
+        //{
+
+        //}
+        //[Fact]
+        //public async Task ShouldNot_UpdateSpaceship_WhenNotUpdateData()
+        //{
+        //}
     }
 }
