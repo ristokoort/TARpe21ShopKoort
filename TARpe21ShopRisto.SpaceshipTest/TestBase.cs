@@ -1,17 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
 using TARpe21ShopRisto.ApplicationServices.Services;
 using TARpe21ShopRisto.Core.ServiceInterface;
 using TARpe21ShopRisto.Data;
 using TARpe21ShopRisto.SpaceshipTest.Macros;
-using Microsoft.Extensions.Hosting;
 using TARpe21ShopRisto.SpaceshipTest.Mock;
+
 
 namespace TARpe21ShopRisto.SpaceshipTest
 {

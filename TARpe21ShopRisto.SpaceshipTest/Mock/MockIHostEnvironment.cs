@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IHostingEnvironment = Microsoft.Extensions.Hosting.IHostingEnvironment;
 
 namespace TARpe21ShopRisto.SpaceshipTest.Mock
 {
@@ -15,5 +16,7 @@ namespace TARpe21ShopRisto.SpaceshipTest.Mock
         public string ApplicationName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string ContentRootPath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public IFileProvider ContentRootFileProvider { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string WebRootPath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IFileProvider WebRootFileProvider { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

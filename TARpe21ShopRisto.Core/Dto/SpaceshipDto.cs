@@ -11,7 +11,7 @@ namespace TARpe21ShopRisto.Core.Dto
 {
     public class SpaceshipDto
     {
-        
+
         [Key]
         public Guid? Id { get; set; } // globally unique identifier
         public string Name { get; set; } // ship name
@@ -40,6 +40,7 @@ namespace TARpe21ShopRisto.Core.Dto
 
         public DateTime CreatedAt { get; set; } // when the entry was created
         public DateTime ModifiedAt { get; set; } // when the entry has been modified last
-        
+
     }
 }
+
