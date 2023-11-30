@@ -105,15 +105,44 @@ namespace TARpe21ShopRisto.SpaceshipTest
             };
             return spaceship;
         }
-        //[Fact]
-        //public async Task Should_DeleteByIdSpaceship_WhenDeleteSpaceship()
-        //{
 
-        //}
+        [Fact]
+        public async Task Should_DeleteByIdSpaceship_WhenDeleteSpaceship()
+        {
+            var guid = new Guid("c2d73cf6-671d-414b-948d-ee4664fb5d4d");
+
+            
+            SpaceshipDto spaceship = MockSpaceshipData();
+            var createResult = await Svc<ISpaceshipsServices>().Create(spaceship);
+
+            spaceship.Id = Guid.Parse("c2d73cf6-671d-414b-948d-ee4664fb5d4d");
+            spaceship.Name = "Edit Test name";
+            spaceship.Description = "Test description";
+            spaceship.PassengerCount = 1500;
+            spaceship.CrewCount = 15;
+            spaceship.CargoWeight = 6000;
+            spaceship.MaxSpeedInVaccuum = 450;
+            spaceship.BuiltAtDate = DateTime.Now;
+            spaceship.MaidenLaunch = DateTime.Now;
+            spaceship.Manufacturer = "Test manufacturer";
+            spaceship.IsSpaceshipPreviouslyOwned = true;
+            spaceship.FullTripsCount = 3;
+            spaceship.Type = "Test Type";
+            spaceship.EnginePower = 6001;
+            spaceship.FuelConsumptionPerDay = 3000;
+            spaceship.MaintenanceCount = 1;
+            spaceship.LastMaintenance = DateTime.Now;
+            spaceship.CreatedAt = DateTime.Now;
+            spaceship.ModifiedAt = DateTime.Now;
+
+            Assert.NotNull(createResult);
+            var deleteResult = await Svc<ISpaceshipsServices>().DeleteById(guid);
+            Assert.True(deleteResult);
+        }
 
         //[Fact]
         //public async Task ShouldNot_UpdateSpaceship_WhenNotUpdateData()
-        //{
+        {
 
         //}
 
