@@ -16,5 +16,6 @@ namespace TARpe21ShopRisto.Core.ServiceInterface
         Task<Spaceship> Delete(Guid Id);
         Task<Spaceship> GetAsync(Guid Id);
         Task<bool> DeleteById(Guid guid);
+        Task<SpaceshipDto> GetById(Guid guid);
     }
 }
