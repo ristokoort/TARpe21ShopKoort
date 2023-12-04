@@ -1,0 +1,52 @@
+﻿@model Tarpe21ShopRisto.Models.OpenWeather.CityResultViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Forecast</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1>City Forecast</h1>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2>@Model.Name, @Model.City</h2>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <dl class="row">
+                            <dt class="col-sm-4">Timezone:</dt>
+                            <dd class="col-sm-8">@Model.Timezone</dd>
+
+                            <dt class="col-sm-4">Temperature:</dt>
+                            <dd class="col-sm-8">@Model.Temperature</dd>
+
+                            <dt class="col-sm-4">Feels Like:</dt>
+                            <dd class="col-sm-8">@Model.Feels_like</dd>
+                        </dl>
+                    </div>
+
+                    <div class="col-md-6">
+                        <dl class="row">
+                            <dt class="col-sm-4">Humidity:</dt>
+                            <dd class="col-sm-8">@Model.Humidity</dd>
+
+                            <dt class="col-sm-4">Description:</dt>
+                            <dd class="col-sm-8">@Model.Description</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

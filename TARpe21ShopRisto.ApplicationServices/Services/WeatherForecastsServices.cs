@@ -1,5 +1,6 @@
 ﻿using Nancy.Json;
 using System.Net;
+using Tarpe21ShopRisto.Core.Dto.OpenWeatherDto;
 using TARpe21ShopRisto.Core.Dto.WeatherDtos;
 using TARpe21ShopRisto.Core.ServiceInterface;
 
@@ -9,8 +10,8 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
     {
         public async Task<WeatherResultDto> WeatherDetail(WeatherResultDto dto)
         {
-            string apikey = "UoJSCG3lbTnHIA9VEMQbeILRapsOWdQx";
-            var url = $"http://dataservice.accuweather.com/forecasts/v1/daily/1day/127964?apiKeys";
+            string apikey = "HtXsGFLFAcnYRG10m695VGkgKCAbEbZd";
+            var url = $"http://dataservice.accuweather.com/forecasts/v1/daily/1day/127964?apiKey=HtXsGFLFAcnYRG10m695VGkgKCAbEbZd5metric=true";
 
             using (WebClient client = new WebClient())
             {
@@ -49,8 +50,38 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
                 weatherInfo.DailyForecasts[0].Night.HasPrecipitation = dto.NightHasPrecipitation;
                 weatherInfo.DailyForecasts[0].Night.PrecipitationType = dto.NightPrecipitationType;
                 weatherInfo.DailyForecasts[0].Night.PrecipitationIntensity = dto.NightPrecipitationIntensity;
+
             }
             return dto;
         }
+
+        public async Task<OpenWeatherResultDto> OpenWeatherDetail(OpenWeatherResultDto dto)
+        {
+            string openapikey = "89f30efaf29857c345fef3ab9b2a9b92";
+            var url = $"https://api.openweathermap.org/data/2.5/weather?q={dto.City}&units=metric&APPID={openapikey}";
+
+            using (WebClient client = new WebClient())
+            {
+                string json = client.DownloadString(url);
+                OpenWeatherRootDto weatherResult = (new JavaScriptSerializer()).Deserialize<OpenWeatherRootDto>(json);
+
+                dto.City = weatherResult.Name;
+                dto.Timezone = weatherResult.Timezone;
+                dto.Name = weatherResult.Name;
+                dto.Lon = weatherResult.Lon;
+                dto.Lat = weatherResult.Lat;
+                dto.Temperature = Math.Round(weatherResult.Main.Temp);
+                dto.Feels_like = Math.Round(weatherResult.Main.FeelsLike);
+                dto.Humidity = weatherResult.Main.Humidity;
+                dto.Pressure = weatherResult.Main.Pressure;
+                dto.Speed = weatherResult.Wind.Speed;
+                dto.Description = weatherResult.Weather[0].Description;
+
+            }
+            return dto;
+        }
+
+
+
     }
 }
