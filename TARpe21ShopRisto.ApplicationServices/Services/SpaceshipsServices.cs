@@ -123,5 +123,48 @@ namespace TARpe21ShopRisto.ApplicationServices.Services
                 .FirstOrDefaultAsync(x => x.Id == Id);
             return result;
         }
+        public async Task<bool> DeleteById(Guid id)
+        {
+            var spaceship = await _context.Spaceships.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (spaceship == null)
+                return false; 
+
+            var images = await _context.FilesToDatabase
+                .Where(x => x.SpaceshipId == id)
+                .Select(y => new FileToDatabaseDto
+                {
+                    Id = y.Id,
+                    ImageTitle = y.ImageTitle,
+                    SpaceshipId = y.SpaceshipId
+                }).ToArrayAsync();
+
+            await _files.RemoveImagesFromDatabase(images);
+            _context.Spaceships.Remove(spaceship);
+            await _context.SaveChangesAsync();
+
+            return true; 
+        }
+
+        public async Task<SpaceshipDto> GetById(Guid id)
+        {
+            var spaceship = await _context.Spaceships.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (spaceship == null)
+                return null; 
+
+            var spaceshipDto = new SpaceshipDto
+            {
+                Id = spaceship.Id,
+                Name = spaceship.Name,
+                Description = spaceship.Description,
+                
+            };
+
+            
+
+            return spaceshipDto;
+        }
     }
 }
+
